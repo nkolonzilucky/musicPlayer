@@ -1,46 +1,29 @@
+import CommentButton from '@/components/commentButton';
+import CoverArtImage from '@/components/coverart';
+import LikedislikeButton from '@/components/likeAndDislikeButton';
+import SaveButton from '@/components/saveButton';
+import ShareButton from '@/components/shareButton';
+import TopNav from '@/components/topNav';
+
 import type { NextPage } from 'next';
 
 
 
-const MackbookairView:NextPage = () => {
+const SongViewToo:NextPage = () => {
   	return (
-    		<div className="w-full relative rounded-corner-extra-large bg-black h-[94.5rem] overflow-hidden text-left text-[8.891rem] text-silver font-inter">
-      			<div className="absolute top-[3.75rem] left-[calc(50%_-_551px)] flex flex-row items-center justify-center gap-[5.5rem]">
-        				<div className="w-[19.313rem] flex flex-col items-start justify-start gap-[2.875rem]">
-          					<div className="self-stretch [backdrop-filter:blur(4px)] rounded-corner-large bg-dimgray border-darkgray border-[2px] border-solid flex flex-row items-center justify-center p-[0.625rem]">
-            						<div className="relative">Test</div>
-          					</div>
-          					<div className="self-stretch [backdrop-filter:blur(4px)] rounded-corner-large bg-dimgray border-darkgray border-[2px] border-solid flex flex-row items-center justify-center p-[0.625rem]">
-            						<div className="relative">Test</div>
-          					</div>
-          					<div className="self-stretch [backdrop-filter:blur(4px)] rounded-corner-large bg-dimgray border-darkgray border-[2px] border-solid flex flex-row items-center justify-center p-[0.625rem]">
-            						<div className="relative">Test</div>
-          					</div>
-        				</div>
-        				<div className="w-[19.313rem] flex flex-col items-start justify-start gap-[3.187rem]">
-          					<div className="self-stretch [backdrop-filter:blur(4px)] rounded-corner-large bg-dimgray border-darkgray border-[2px] border-solid flex flex-row items-center justify-center p-[0.625rem]">
-            						<div className="relative">Test</div>
-          					</div>
-          					<div className="self-stretch [backdrop-filter:blur(4px)] rounded-corner-large bg-dimgray border-darkgray border-[2px] border-solid flex flex-row items-center justify-center p-[0.625rem]">
-            						<div className="relative">Test</div>
-          					</div>
-          					<div className="self-stretch [backdrop-filter:blur(4px)] rounded-corner-large bg-dimgray border-darkgray border-[2px] border-solid flex flex-row items-center justify-center p-[0.625rem]">
-            						<div className="relative">Test</div>
-          					</div>
-        				</div>
-        				<div className="w-[19.313rem] flex flex-col items-start justify-start gap-[4.25rem]">
-          					<div className="self-stretch [backdrop-filter:blur(4px)] rounded-corner-large bg-dimgray border-darkgray border-[2px] border-solid flex flex-row items-center justify-center p-[0.625rem]">
-            						<div className="relative">Test</div>
-          					</div>
-          					<div className="self-stretch [backdrop-filter:blur(4px)] rounded-corner-large bg-dimgray border-darkgray border-[2px] border-solid flex flex-row items-center justify-center p-[0.625rem]">
-            						<div className="relative">Test</div>
-          					</div>
-          					<div className="self-stretch [backdrop-filter:blur(4px)] rounded-corner-large bg-dimgray border-darkgray border-[2px] border-solid flex flex-row items-center justify-center p-[0.625rem]">
-            						<div className="relative">Test</div>
-          					</div>
-        				</div>
-      			</div>
-    		</div>);
+		<div className='flex flex-col items-center m-5 '>
+			<div className="[background:linear-gradient(16.09deg,_#1c1b1b_2.63%,_#4f4d4d)] py-4 px-8 rounded-3xl">
+			<TopNav />
+			<CoverArtImage />
+			<div className='flex gap-3 items-center justify-between mt-2'>
+				<LikedislikeButton />
+				<CommentButton />
+				<SaveButton />
+				<ShareButton />
+			</div>
+		</div>
+		</div>
+		);
 };
 
-export default MackbookairView;
+export default SongViewToo;
