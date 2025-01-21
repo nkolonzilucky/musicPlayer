@@ -4,7 +4,6 @@ import EndTime from '@/components/endTime';
 import LikedislikeButton from '@/components/likeAndDislikeButton';
 import PlayButton from '@/components/playOrPauseButton';
 import PrevButtonIcon from '@/components/prevButton';
-import Line from '@/components/progressLine';
 import RepeatButtonIcon from '@/components/repeatButton';
 import SaveButton from '@/components/saveButton';
 import ShareButton from '@/components/shareButton';
@@ -12,7 +11,6 @@ import ShuffleButtonIcon from '@/components/shuffleButton';
 import NextButtonIcon from '@/components/skipButton';
 import Titleartist from '@/components/songMetadata';
 import StartTime from '@/components/startTime';
-import Line2 from '@/components/staticLine';
 import TopNav from '@/components/topNav';
 
 import type { NextPage } from 'next';
